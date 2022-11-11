@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    box-sizing: border-box;
+    padding: 100px;
+    background-color: rgb(241, 223, 223);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr);
+    grid-template-rows: repeat(4 , 1fr);
+    grid-template-areas: 
+        "one one one one two two three three"
+        "four four five five five five three three"
+        "four four six six six six three three"
+        "seven seven eight eight nine nine ten ten";
+    gap: 10px;
+}
+.one,
+.two,
+.four,
+.six,
+.seven,
+.nine,
+.ten{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #fc5a27;
+
+}
+.three,
+.five,
+.eight{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid #fc5a27;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.ten{
+    grid-area: ten;
+}
+.one .name,
+.two .name,
+.four .name,
+.six .name,
+.seven .name,
+.nine .name,
+.ten .name{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+.three .name,
+.five .name,
+.eight .name{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+.one .skill,
+.two .skill,
+.three .skill,
+.four .skill,
+.five .skill,
+.six .skill,
+.seven .skill,
+.eight .skill,
+.nine .skill,
+.ten .skill{
+    color: #afb0b5;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.one .short-info,
+.two .short-info,
+.four .short-info,
+.six .short-info,
+.seven .short-info,
+.nine .short-info,
+.ten .short-info{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.three .short-info,
+.five .short-info,
+.eight .short-info{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.one .long-info,
+.two .long-info,
+.four .long-info,
+.six .long-info,
+.seven .long-info,
+.nine .long-info,
+.ten .long-info{
+    color: black;
+    font-size: 17px;
+    padding-top: 15px;
+    overflow: hidden;
+    line-height:40px;
+}
+.three .long-info,
+.five .long-info,
+.eight .long-info{
+    color: white;
+    font-size: 17px;
+    padding-top: 15px;
+    overflow: hidden;
+}
